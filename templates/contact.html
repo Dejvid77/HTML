@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>{{ name }}</h1>
+        <h2>Deine "zukünftige" Rolle</h2>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Kontakt</h3>
+            <form action="/contact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">eMail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Nachricht:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Absenden">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>Credits</h3>
+        <p>Kurzer Dankestext und Verlinkung auf die Techstarter Website in einem neuen Tab <a href="https://techstarter.de/" target="_blank">hier</a></p>
+    </footer>
+</body>
+</html>
