@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <h1>{{name}}</h1>
+    <h2>Arbeiter</h2>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>   
+        <h3>Etwas über mich</h3>
+        <p>Ich teste gerade meine skills in HTML</p>
+    <section>
+        <h3>{{Skills}}</h3>
+        <p>Mit diesen Tools und Sprachen arbeite ich jeden Tag</p>
+        <ul>
+            {%for skill in skills%}
+            <li>{{skill}}</li>
+            {% endfor %}
+        </ul>
+    <section>
+        <h3>Kontakt</h3>
+        <p>Erreichbar über <a href="/contact">Kontaktformular</a></p>
+    </section>
+</main>
+<footer>
+    <h3>Credits</h3>
+    <p>Vielen Dank an <a href="http://techstarter.de" target="blank">Techstarter.de</a></p>
+</footer>
+</body>
+</html>
