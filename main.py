@@ -24,4 +24,4 @@ def submit_contact(
     email: str = Form(...),
     message: str = Form(...)
 ):
-    return templates.TemplateResponse("contact_submission.html", {"request": request, "name": name, "email": email, "message": message})
+    return templates.TemplateResponse("sub_message.html", {"request": request, "name": name, "email": email, "message": message})
